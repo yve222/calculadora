@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Conversión de Pesos a Dólares</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 300px;
+            margin: 50px auto;
+        }
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #resultado {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Calculadora de Conversión de Pesos a Dólares</h2>
+        <input type="number" id="pesos" placeholder="Ingrese la cantidad de pesos">
+        <button onclick="convertir()">Convertir a Dólares</button>
+        <div id="resultado"></div>
+    </div>
+
+    <script>
+        function convertir() {
+            var pesos = document.getElementById("pesos").value;
+            var tipoCambio = 0.05; // Tipo de cambio (por ejemplo, 1 peso = 0.05 dólares)
+
+            var resultado = pesos * tipoCambio;
+
+            document.getElementById("resultado").innerHTML = "USD " + resultado.toFixed(2);
+        }
+    </script><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Conversión de Dólares a Yuanes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 300px;
+            margin: 50px auto;
+        }
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #resultado {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Calculadora de Conversión de Dólares a Yuanes</h2>
+        <input type="number" id="dolares" placeholder="Ingrese la cantidad de dólares">
+        <button onclick="convertir()">Convertir a Yuanes</button>
+        <div id="resultado"></div>
+    </div>
+
+    <script>
+        function convertir() {
+            var dolares = document.getElementById("dolares").value;
+            var tipoCambio = 6.36; // Tipo de cambio (por ejemplo, 1 dólar = 6.36 yuanes)
+
+            var resultado = dolares * tipoCambio;
+
+            document.getElementById("resultado").innerHTML = "CNY " + resultado.toFixed(2);
+        }
+    </script><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Conversión de Yuanes a Pesos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 300px;
+            margin: 50px auto;
+        }
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #resultado {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Calculadora de Conversión de Yuanes a Pesos</h2>
+        <input type="number" id="yuanes" placeholder="Ingrese la cantidad de yuanes">
+        <button onclick="convertir()">Convertir a Pesos</button>
+        <div id="resultado"></div>
+    </div>
+
+    <script>
+        function convertir() {
+            var yuanes = document.getElementById("yuanes").value;
+            var tipoCambio = 0.52; // Tipo de cambio (por ejemplo, 1 yuan = 0.52 pesos)
+
+            var resultado = yuanes * tipoCambio;
+
+            document.getElementById("resultado").innerHTML = "MXN " + resultado.toFixed(2);
+        }
+    </script>
+</body>
+</html>
+
+</body>
+</html>
+
+</body>
+</html>
